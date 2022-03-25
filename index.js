@@ -87,10 +87,18 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  const lowerCaseNamesArray = [];
+
+  function lowerCaseNames(array){
+    array.map((item) => {
+      const index = array.indexOf(item);
+      const lowerCaseName = array[index].animal_name.toLowerCase();
+      lowerCaseNamesArray.push(lowerCaseName);
+    });
+    return lowerCaseNamesArray;
   }
   
+  console.log(lowerCaseNames(zooAnimals));
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
