@@ -71,8 +71,8 @@ const zooAnimals = [
       const index = array.indexOf(item);
       const nameString = `name: ${array[index].animal_name}, scientific: ${array[index].scientific_name}`;
       displayNames.push(nameString);
-  });
-  return displayNames;
+    });
+    return displayNames;
   }
   
   console.log(animalNames(zooAnimals));
@@ -163,7 +163,7 @@ const zooAnimals = [
 
 function add(num1, num2){
     return num1 + num2;
-  }
+}
 
 
 /* Use multiply to do the following:
@@ -173,7 +173,7 @@ function add(num1, num2){
 
 function multiply(num1, num2){
    return num1 * num2;
-  }
+}
 
 
  /* Use greeting to do the following:
@@ -184,7 +184,7 @@ function multiply(num1, num2){
 
 function greeting(firstName, lastName){
    return `Hello ${firstName} ${lastName}, nice to meet you!`;
-  }
+}
   
   
 // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
