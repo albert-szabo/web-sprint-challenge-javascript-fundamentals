@@ -108,10 +108,19 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  const lowPopulationAnimalsArray = [];
+
+  function lowPopulationAnimals(array){
+    array.filter((item) => {
+      const index = array.indexOf(item);
+      if (array[index].population < 5) {
+        lowPopulationAnimalsArray.push(item);
+      }
+    });
+    return lowPopulationAnimalsArray;
   }
   
+  console.log(lowPopulationAnimals(zooAnimals));
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
