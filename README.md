@@ -27,23 +27,31 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
-
+The .map method does something you tell it to do to each index within an array and then returns a new array with the altered items.
+It can be used when you want to update data in an array, but preserve the original data in the original array.
+The .reduce method returns one value based on an array by accumulating some value in a variable.
+It can be used when you want to some kind of math on indexes in an array, like finding a total or an average.
+The .filter method applies a test to each index of an array and only adds those indexes that pass to a new array, which is returned.
+It can be used when you want to grab a subset of some original data that has certain values above or below a specified threshold.
 
 2. Explain the difference between a callback and a higher order function.
 
-
+A callback is a function that is passed to another, separate function as an argument in invoking that separate function. A higher order function is a function that takes other functions as parameters.
 
 3. Explain what a closure is.
 
-
+A closure occurs when a function goes outside of its own scope to find a variable that is not found there, but is found in a larger / broader / higher level of scope (usually an outer function).
 
 4. Describe the four principles of the 'this' keyword.
 
-
+In window binding, 'this' returns the window or the global object because it has not been given a narrower, more specific context to use as reference.
+In implicit binding, 'this' is used with dot syntax in the context of an object (including with methods) to refer to that specific object.
+In explicit binding, 'this' is provided with context to refer to via three special methods: .call, .bind, and .apply.
+In new binding, 'this' is provided with context by the 'new' keyword and refers to the new object that is created.
 
 5. Why do we need super() in an extended class?
 
-
+We need super() in an extended / child class to call the constructor of the parent class and avoid duplication of constructor elements that are common between the two.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
